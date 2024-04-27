@@ -1,0 +1,10 @@
+def div_ab(a, b):
+    for i in range(a):
+        n = a - (b * i)
+        if n >= 0:
+            x= print(f'{a}나누기 {b}의 결과 : 몫 {i}, 나머지 {n}')
+
+print("5번 답안")
+a = 10
+b = 3
+print(div_ab(a, b))
