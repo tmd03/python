@@ -1,0 +1,15 @@
+def search_target(sentence, target):
+    position = []
+    word = sentence.split()
+    for i in range(len(word)):
+        if target == word[i]:
+            position.append(i)
+    print(f'{len(position)},{position}')
+
+
+print("4번 답안")
+
+sentence = "Beautiful is better than ugly. Explicit is better than implicit. Simple is better than complex."
+target = "than"
+
+print(search_target(sentence, target))
