@@ -1,11 +1,9 @@
 def search_target(sentence, target):
-    position = []
-    word = sentence.split()
-    for i in range(len(word)):
-        if target == word[i]:
-            position.append(i)
-    print(f'{len(position)},{position}')
-
+    positions = []
+    for idx, value in enumerate(sentence):
+        if sentence[idx:idx+len(target)] == target:
+            positions.append(idx)
+    return len(positions), positions
 
 print("4번 답안")
 
